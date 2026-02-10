@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Korepetycje do matury</title>
+  <meta name="description" content="Korepetycje do matury dla licealistów. Prosto, bez spiny. Online lub stacjonarnie." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Korepetycje</a>
+
+      <nav class="menu" id="menu">
+        <a href="#oferta">Oferta</a>
+        <a href="#cennik">Cennik</a>
+        <a href="opinie.html">Opinie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Otwórz menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Korepetycje do matury — na spokojnie ogarniemy materiał</h1>
+      <p class="lead">
+        Tłumaczę krok po kroku. Nadrobimy zaległości, robimy arkusze i przygotujemy Cię pod sprawdzian / maturę.
+        Online albo stacjonarnie.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#kontakt">Umów lekcję</a>
+        <a class="btn ghost" href="#cennik">Zobacz cennik</a>
+      </div>
+
+      <div class="mini">
+        <span>✅ Arkusze</span>
+        <span>✅ Prosto</span>
+        <span>✅ Bez spiny</span>
+      </div>
+    </section>
+
+    <section class="card" id="oferta">
+      <h2>Oferta</h2>
+      <ul class="list">
+        <li><b>Pojedyncze lekcje</b> — jak masz sprawdzian na szybko</li>
+        <li><b>Regularnie</b> — 1–2 razy w tygodniu (najlepiej działa)</li>
+        <li><b>Powtórki przed maturą</b> — selekcja tematów + arkusze</li>
+      </ul>
+    </section>
+
+    <section class="card" id="cennik">
+      <h2>Cennik</h2>
+      <div class="prices">
+        <div class="price">
+          <div class="price-title">60 min</div>
+          <div class="price-value">120 zł</div>
+        </div>
+        <div class="price">
+          <div class="price-title">Pakiet 10h</div>
+          <div class="price-value">1100 zł</div>
+        </div>
+      </div>
+      <p class="muted">Online albo stacjonarnie. Odwołanie terminu: min. 24h wcześniej.</p>
+    </section>
+
+    <section class="card" id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="muted">Napisz i dogadamy termin (i poziom: podstawa/rozszerzenie).</p>
+
+      <div class="contact">
+        <a class="contact-item" href="tel:+48111111111">📞 +48 111 111 111</a>
+        <a class="contact-item" href="mailto:twojmail@gmail.com">✉️ twojmail@gmail.com</a>
+        <a class="contact-item" href="https://wa.me/48111111111" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+      </div>
+
+      <form class="form" action="mailto:twojmail@gmail.com" method="post" enctype="text/plain">
+        <label>Imię
+          <input name="Imię" required placeholder="Np. Ola" />
+        </label>
+        <label>Co chcesz ogarnąć?
+          <input name="Temat" placeholder="Np. funkcje / trygonometria / arkusze" />
+        </label>
+        <label>Wiadomość
+          <textarea name="Wiadomość" rows="4" required placeholder="Napisz poziom i kiedy masz termin."></textarea>
+        </label>
+        <button class="btn" type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Korepetycje</span>
+      <span class="muted">Prosto i konkretnie.</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
